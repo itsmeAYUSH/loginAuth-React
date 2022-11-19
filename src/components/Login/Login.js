@@ -47,7 +47,7 @@ const Login = (props) => {
     console.log("checking for validity");
     const identifier = setTimeout(() => {
       setFormIsValid(emailIsValid && passwordIsValid > 6);
-    }, 1000);
+    }, 500);
     return () => {
       console.log("cleanup");
       clearTimeout(identifier);
